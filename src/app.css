@@ -1,0 +1,74 @@
+@import 'tailwindcss';
+@plugin 'daisyui' {
+	themes: dracula, cupcake, synthwave, night;
+}
+
+:root {
+	--font-serif: 'Gowun Batang', 'Noto Serif KR', serif;
+}
+
+body {
+	font-family: var(--font-serif);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: oklch(var(--b2));
+}
+
+::-webkit-scrollbar-thumb {
+	background: oklch(var(--p));
+	border-radius: 4px;
+}
+
+/* Animation classes */
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes pulse-glow {
+	0%, 100% {
+		box-shadow: 0 0 20px oklch(var(--p) / 0.3);
+	}
+	50% {
+		box-shadow: 0 0 40px oklch(var(--p) / 0.5);
+	}
+}
+
+.animate-fade-in-up {
+	animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.animate-pulse-glow {
+	animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Staggered animation delays */
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+
+/* Five elements colors */
+.element-wood { color: #228B22; }
+.element-fire { color: #DC143C; }
+.element-earth { color: #DAA520; }
+.element-metal { color: #C0C0C0; }
+.element-water { color: #1E90FF; }
+
+.bg-element-wood { background-color: #228B22; }
+.bg-element-fire { background-color: #DC143C; }
+.bg-element-earth { background-color: #DAA520; }
+.bg-element-metal { background-color: #C0C0C0; }
+.bg-element-water { background-color: #1E90FF; }
