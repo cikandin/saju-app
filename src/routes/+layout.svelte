@@ -48,9 +48,12 @@
 	
 	<!-- 푸터 -->
 	<footer class="footer footer-center p-6 text-base-content relative z-10">
-		<aside>
+		<aside class="space-y-2">
 			<p class="opacity-60">
 				☯ 사주팔자는 참고용이며, 개인의 노력과 선택이 가장 중요합니다 ☯
+			</p>
+			<p class="text-sm opacity-40">
+				© {new Date().getFullYear()} Jung Siyoung. All rights reserved.
 			</p>
 		</aside>
 	</footer>
