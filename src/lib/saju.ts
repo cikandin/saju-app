@@ -602,7 +602,7 @@ export function calculateSaju(
 	const monthBranchIndex = parseInt(mapping.EMonth) - 1;
 	const monthPillar = createPillar(monthStemIndex, monthBranchIndex);
 	
-	// 일주: dates_mapping.json 사용 (사주수첩 만세력과 일치)
+	// 일주: dates_mapping.json 사용 (한국 만세력과 일치)
 	const dayStemIndex = parseInt(mapping.HDay) - 1;
 	const dayBranchIndex = parseInt(mapping.EDay) - 1;
 	const dayPillar = createPillar(dayStemIndex, dayBranchIndex);
